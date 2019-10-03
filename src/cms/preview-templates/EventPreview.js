@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogPostPreview = ({ entry, widgetFor }) => (
+const EventPreview = ({ entry, widgetFor }) => (
   <div>
     <div>{widgetFor("body")}</div>
     <div>{entry.getIn(["data", "description"])}</div>
@@ -9,4 +9,4 @@ const BlogPostPreview = ({ entry, widgetFor }) => (
   </div>
 );
 
-export default BlogPostPreview;
+export default EventPreview;
