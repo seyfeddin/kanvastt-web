@@ -155,6 +155,10 @@ $title-text: 1.5rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
 $hero-text: 1.5rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
 $p-text: 1.25rem/1.6 "Manrope-Medium", --apple-system, sans-serif;
 
+$title-text-mobile: 1.25rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
+$hero-text-mobile: 1.25rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
+$p-text-mobile: 1.1rem/1.6 "Manrope-Medium", --apple-system, sans-serif;
+
 /* Colors */
 
 $primary-color: #086054;
@@ -221,4 +225,42 @@ a.twitter {
   display: block;
   text-decoration: none;
   margin-bottom: 224px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 32rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin: 130px auto 100px auto;
+    width: 227px;
+    img {
+      width: 100%;
+    }
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  p {
+    font: $p-text-mobile;
+  }
+
+  .hello {
+    p {
+      font: $hero-text-mobile;
+    }
+  }
+
+  .what-we-do,
+  .how-to-join {
+    h2 {
+      font: $title-text-mobile;
+    }
+  }
 }
