@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url(../fonts/manrope-bold.woff2);
+  src: url(../fonts/manrope-bold.woff2) format("woff2"),
+    url(../fonts/manrope-bold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url(../fonts/manrope-medium.woff2);
+  src: url(../fonts/manrope-medium.woff2) format("woff2"),
+    url(../fonts/manrope-medium.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* Texts */
+$title-text: 1.5rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
+$hero-text: 1.5rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
+$p-text: 1.25rem/1.6 "Manrope-Medium", --apple-system, sans-serif;
+
+/* Colors */
+
+$primary-color: #086054;
+$text-color: #fff;
+$light-color: #fff5ea;
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+/* Main Styles */
+
+:root {
+  font-size: 100%;
+}
+
+body {
+  background: $primary-color;
+  font-size: 100%;
+  font-family: $p-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+  color: $light-color;
+}
+
+p {
+  color: $text-color;
+  font: $p-text;
+}
+
+.logo {
+  margin-left: 10.97%;
+  margin-top: 130px;
+}
+
+.container {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.hello {
+  margin: 100px auto 70px auto;
+  p {
+    font: $hero-text;
+  }
+}
+
+.what-we-do,
+.how-to-join {
+  margin-bottom: 70px;
+  h2 {
+    font: $title-text;
+    color: #fff5ea;
+    margin-bottom: 12px;
+  }
+}
+
+a.twitter {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 224px;
+}
