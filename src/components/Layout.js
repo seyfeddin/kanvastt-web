@@ -1,8 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import "../styles/main.scss";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
