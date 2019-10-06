@@ -37,6 +37,7 @@ const TemplateWrapper = ({ children }) => {
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />
+        <meta name="yandex-verification" content="a200a0818557301d" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
