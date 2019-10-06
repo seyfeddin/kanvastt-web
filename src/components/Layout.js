@@ -33,7 +33,7 @@ const TemplateWrapper = ({ children }) => {
 
         <link
           rel="mask-icon"
-          href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
+          href={`${withPrefix("/")}img/safari-pinned-tab-fill.svg`}
           color="#086054"
         />
         <meta name="theme-color" content="#fff" />
