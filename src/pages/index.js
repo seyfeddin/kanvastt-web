@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import Logo from "../components/Logo";
 import TwitterLink from "../components/TwitterLink";
+import RegisterForm from "../components/RegisterForm";
 
 const Index = () => (
   <Layout>
@@ -36,6 +37,7 @@ const Index = () => (
         </p>
       </div>
       <TwitterLink />
+      <RegisterForm />
     </div>
   </Layout>
 );
