@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import addToMailchimp from "gatsby-plugin-mailchimp";
 
 export default class RegisterForm extends React.Component {
