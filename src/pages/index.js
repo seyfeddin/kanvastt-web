@@ -3,8 +3,9 @@ import Layout from "../components/Layout";
 import Logo from "../components/Logo";
 import TwitterLink from "../components/TwitterLink";
 import RegisterForm from "../components/RegisterForm";
+import EventListing from "../components/EventListing";
 
-const Index = () => (
+const Index = ({ data }) => (
   <Layout>
     <Logo />
     <div class="container">
@@ -37,9 +38,36 @@ const Index = () => (
         </p>
       </div>
       <TwitterLink />
+      {data.allMarkdownRemark.edges.map(({ node }, index) => (
+        <EventListing
+          title={node.frontmatter.title}
+          description={node.frontmatter.description}
+          link={node.frontmatter.link}
+          date={node.frontmatter.date}
+        />
+      ))}
       <RegisterForm />
     </div>
   </Layout>
 );
+
+export const query = graphql`
+  query EventsQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            tags
+            link
+            description
+            date(formatString: "DD MMMM YYYY", locale: "tr")
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Index;
