@@ -7,6 +7,6 @@ description: >-
   vereceğimiz bir atölye olacak.
 tags:
   - atölye
-link: kanvas.istanbul
+link: ''
 ---
 
