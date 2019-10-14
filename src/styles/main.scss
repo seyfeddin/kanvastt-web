@@ -321,6 +321,43 @@ a.kommunity {
   margin-bottom: 170px;
 }
 
+#register-form {
+  padding: 140px 0 200px 0;
+  h1 {
+    font: $big-text;
+    margin-bottom: 23px;
+  }
+  form {
+    position: relative;
+    margin-top: 17px;
+    input[type="email"] {
+      width: 100%;
+      appearance: none;
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid $light-color;
+      height: 50px;
+      color: $text-color;
+      font: $p-text;
+      float: left;
+    }
+    input[type="submit"] {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      right: 0;
+      top: 4px;
+      appearance: none;
+      background: url(../img/submit.svg) no-repeat 50% 50%;
+      clip: auto;
+      border: none;
+      float: right;
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   .container {
     width: 32rem;

@@ -38,18 +38,21 @@ export default class RegisterForm extends React.Component {
     return (
       <div id="register-form">
         <div class="container">
+          <h1>Sen de bizim gibi heyecanlı mısın?</h1>
           <p class="mail-msg">
-            Submit the form below and check your browser console!
+            O halde topluluğun şekillenmesinde söz sahibi olmak, ve
+            etkinliklerden ilk haberdar olmak istiyorsan, e-posta listesine
+            kayıt ol.
           </p>
           <div>
             <form onSubmit={this._handleSubmit}>
               <input
                 type="email"
                 onChange={this._handleChange}
-                placeholder="email"
+                placeholder="eposta adresin"
                 name="email"
               />
-              <input type="submit" />
+              <input type="submit" value="" />
             </form>
           </div>
         </div>
