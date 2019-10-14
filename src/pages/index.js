@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Logo from "../components/Logo";
 import TwitterLink from "../components/TwitterLink";
