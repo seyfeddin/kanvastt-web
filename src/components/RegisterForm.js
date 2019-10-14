@@ -36,20 +36,22 @@ export default class RegisterForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <p class="mail-msg">
-          Submit the form below and check your browser console!
-        </p>
-        <div>
-          <form onSubmit={this._handleSubmit}>
-            <input
-              type="email"
-              onChange={this._handleChange}
-              placeholder="email"
-              name="email"
-            />
-            <input type="submit" />
-          </form>
+      <div id="register-form">
+        <div class="container">
+          <p class="mail-msg">
+            Submit the form below and check your browser console!
+          </p>
+          <div>
+            <form onSubmit={this._handleSubmit}>
+              <input
+                type="email"
+                onChange={this._handleChange}
+                placeholder="email"
+                name="email"
+              />
+              <input type="submit" />
+            </form>
+          </div>
         </div>
       </div>
     );

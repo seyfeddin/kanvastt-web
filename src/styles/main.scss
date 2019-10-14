@@ -152,18 +152,20 @@ table {
 
 /* Texts */
 $title-text: 1.5rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
-$hero-text: 1.5rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
+$hero-text: 1.5rem/1.5 "Manrope-Medium", --apple-system, sans-serif;
 $p-text: 1.25rem/1.6 "Manrope-Medium", --apple-system, sans-serif;
+$big-text: 2.75rem/1.33 "Manrope-Bold", --apple-system, sans-serif;
+$event-date: 1.25rem/1.6 "Manrope-Medium", --apple-system, sans-serif;
 
 $title-text-mobile: 1.25rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
-$hero-text-mobile: 1.25rem/1.5 "Manrope-Bold", --apple-system, sans-serif;
+$hero-text-mobile: 1.25rem/1.5 "Manrope-Medium", --apple-system, sans-serif;
 $p-text-mobile: 1.1rem/1.6 "Manrope-Medium", --apple-system, sans-serif;
 
 /* Colors */
 
-$primary-color: #086054;
+$primary-color: #085147;
 $text-color: #fff;
-$light-color: #fff5ea;
+$light-color: #ffebe6;
 
 img,
 svg {
@@ -182,6 +184,16 @@ body {
   font-family: $p-text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: $light-color;
+  text-decoration: none;
+  background: linear-gradient(
+    to bottom,
+    rgba($light-color, 0) 95%,
+    rgba($light-color, 1) 95%
+  );
 }
 
 h1,
@@ -204,16 +216,26 @@ p {
   margin: 0 auto;
 }
 
+.big-text {
+  margin: 130px auto 40px auto;
+  font: $big-text;
+  color: $light-color;
+  h1 {
+    font-weight: normal;
+  }
+}
+
 .hello {
-  margin: 100px auto 70px auto;
+  margin: 60px auto 40px auto;
   p {
     font: $hero-text;
+    font-weight: normal;
   }
 }
 
 .what-we-do,
 .how-to-join {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   h2 {
     font: $title-text;
     color: #fff5ea;
@@ -221,10 +243,82 @@ p {
   }
 }
 
+#events {
+  background-color: $light-color;
+  color: $primary-color;
+  padding: 170px 0 162px 0;
+  p,
+  h1,
+  h2,
+  h3,
+  a {
+    color: $primary-color;
+  }
+  h1 {
+    font: $big-text;
+  }
+  .event-container {
+    display: grid;
+    row-gap: 34px;
+    gap: 20px;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 29px;
+    .home-event {
+      display: grid;
+      column-gap: 42px;
+      grid-template-columns: 235px auto;
+      grid-template-rows: auto;
+      grid-column-start: auto;
+      grid-row-start: span;
+      margin-left: -275px;
+      .home-event-date {
+        margin-top: 23px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-end;
+        span {
+          font: $event-date;
+          letter-spacing: 0.05em;
+          text-align: right;
+          margin-top: 3px;
+        }
+      }
+      .home-event-info {
+        border-top: 1px solid rgba($primary-color, 0.26);
+        width: 100%;
+        h2 {
+          margin-top: 23px;
+          font: $title-text;
+        }
+        p {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
+
 a.twitter {
   display: block;
   text-decoration: none;
-  margin-bottom: 224px;
+  background: none;
+  float: left;
+}
+
+a.kommunity {
+  display: block;
+  text-decoration: none;
+  background: none;
+  float: left;
+  margin-left: 24px;
+}
+
+.links {
+  clear: both;
+  margin-bottom: 170px;
 }
 
 @media screen and (max-width: 800px) {
