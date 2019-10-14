@@ -16,6 +16,17 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Link", name: "link", widget: "string" }
+      - {
+          label: "Event Date",
+          name: "event_date",
+          widget: "datetime",
+          required: false,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+        }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Link", name: "link", widget: "string", required: false }
