@@ -40,9 +40,9 @@ export default class RegisterForm extends React.Component {
         <div class="container">
           <h1>Sen de bizim gibi heyecanlı mısın?</h1>
           <p class="mail-msg">
-            O halde topluluğun şekillenmesinde söz sahibi olmak, ve
-            etkinliklerden ilk haberdar olmak istiyorsan, e-posta listesine
-            kayıt ol.
+            O halde topluluğun şekillenmesinde söz sahibi olmak ve tüm
+            gelişmelerden ilk haberdar olmak istiyorsan, e-posta listesine kayıt
+            ol.
           </p>
           <div>
             <form onSubmit={this._handleSubmit}>

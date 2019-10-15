@@ -51,7 +51,7 @@ const Index = ({ data }) => (
           >
             Kommunity’deki sayfamıza
           </a>{" "}
-          kaydolabilirsin. Etkinliklerden ve bazı özel buluşmalardan ilk
+          kaydolabilirsin. Tüm gelişmelerden ve bazı özel buluşmalardan ilk
           haberdar olmak için ise <a href="#register-form">mail listemize</a>{" "}
           kayıt olman gerek.
         </p>
