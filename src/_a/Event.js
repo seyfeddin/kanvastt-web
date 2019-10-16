@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default props => (
   <div class="home-event">
@@ -10,4 +10,4 @@ export default props => (
       <p>{props.description}</p>
     </div>
   </div>
-);
+)

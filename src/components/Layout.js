@@ -1,55 +1,29 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import useSiteMetadata from "./SiteMetadata";
-import { withPrefix } from "gatsby";
-import "../styles/main.scss";
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga'
+import { ThemeProvider } from 'emotion-theming'
+import theme from '../styles/theme'
+import GlobalStyle from '../styles/global'
+import ResetStyle from '../styles/reset'
+import Seo from './Seo'
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+const { NODE_ENV } = process.env
+
+const Layout = ({ children }) => {
+  useEffect(() => {
+    if (NODE_ENV === 'production') {
+      ReactGA.initialize('UA-?????????')
+      ReactGA.pageview(window.location.pathname + window.location.search)
+    }
+  }, [])
+
   return (
-    <div>
-      <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+    <ThemeProvider theme={theme}>
+      <Seo />
+      <ResetStyle />
+      <GlobalStyle />
+      {children}
+    </ThemeProvider>
+  )
+}
 
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href={`${withPrefix("/")}img/apple-touch-icon.png`}
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix("/")}img/favicon-32x32.png`}
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix("/")}img/favicon-16x16.png`}
-          sizes="16x16"
-        />
-
-        <link
-          rel="mask-icon"
-          href={`${withPrefix("/")}img/safari-pinned-tab-fill.svg`}
-          color="#086054"
-        />
-        <meta name="theme-color" content="#fff" />
-        <meta name="yandex-verification" content="a200a0818557301d" />
-
-        <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
-        <meta
-          property="og:image"
-          content={`${withPrefix("/")}img/og-image.jpg`}
-        />
-      </Helmet>
-      <div>{children}</div>
-    </div>
-  );
-};
-
-export default TemplateWrapper;
+export default Layout
