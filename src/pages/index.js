@@ -1,15 +1,15 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { Box } from '../components/Styles'
+import Header from '../components/Header'
+import IndexHero from '../views/IndexHero'
 
 function Index() {
   return (
     <Layout>
-      <Box width={[1, 1 / 2]} mx="auto">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet
-        assumenda, cumque cupiditate delectus dolores eaque facere inventore
-        ipsum laudantium nesciunt, pariatur perspiciatis saepe sunt, ut vero
-        voluptate! Sed, voluptates!
+      <Box width={1} maxWidth="780px" mx="auto" px={4}>
+        <Header />
+        <IndexHero />
       </Box>
     </Layout>
   )

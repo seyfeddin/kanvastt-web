@@ -26,7 +26,7 @@ const GlobalStyle = () => (
       body {
         font-family: ${theme.fonts.body};
         font-weight: ${theme.fontWeights.normal};
-        font-size: ${theme.fontSizes[2]};
+        font-size: ${theme.fontSizes.body};
         line-height: ${theme.lineHeights.body};
         color: ${theme.colors.white};
         background-color: ${theme.colors.primary};
