@@ -3,7 +3,7 @@ import { Container, Box, Text } from './Styles'
 
 const Header = () => (
   <Box as="header">
-    <Container pt={7}>
+    <Container pt={[6, 7]}>
       <Text
         as="a"
         href="/asd"
