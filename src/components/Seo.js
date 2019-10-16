@@ -44,14 +44,14 @@ const Seo = () => {
         href="/fonts/manrope-bold.woff2"
         as="font"
         type="font/woff2"
-        crossOrigin
+        crossOrigin="anonymous"
       />
       <link
         rel="preload"
         href="/fonts/manrope-medium.woff2"
         as="font"
         type="font/woff2"
-        crossOrigin
+        crossOrigin="anonymous"
       />
 
       <link
