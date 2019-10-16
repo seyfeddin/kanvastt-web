@@ -29,7 +29,9 @@ export const lineHeights = {
 
 export const space = [0, 4, 8, 16, 32, 40, 64, 128]
 
-export const breakpoints = ['65em']
+export const radii = [0, 3]
+
+export const breakpoints = ['70em']
 
 export default {
   colors,
@@ -38,5 +40,6 @@ export default {
   fontSizes,
   lineHeights,
   space,
-  breakpoints
+  breakpoints,
+  radii
 }

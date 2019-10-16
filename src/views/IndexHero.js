@@ -10,16 +10,15 @@ function Hero() {
           başlıyor.
         </Title>
 
-        <SubTitle as="p" lineHeight="body" mt={5}>
+        <SubTitle as="p" lineHeight="body" mt={4}>
           Kanvas, dijital tasarımı sadece estetik olarak değil bir amaç
           doğrultusunda yapılan hareketler bütünü olarak gören herkesi bir araya
           getirmeyi hedefleyen bir topluluktur.
         </SubTitle>
 
-        <SubTitle color="light" mt={5}>
+        <SubTitle color="light" mt={6}>
           Tasarımcı değil misin?
         </SubTitle>
-
         <Text mt={2}>
           Merak duyman yeterli. Hedeflerimizden biri de topluma yeni
           tasarımcılar kazandırmak. Planladığımız etkinlikler arasında sana
@@ -29,7 +28,6 @@ function Hero() {
         <SubTitle color="light" mt={5}>
           Nasıl Katılabilirim?
         </SubTitle>
-
         <Text mt={2}>
           Bizi Twitter üzerinden takip edebilir, Kommunity’deki sayfamıza
           kaydolabilirsin. Tüm gelişmeler ve bazı özel buluşmalardan ilk

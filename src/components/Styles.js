@@ -8,8 +8,11 @@ import {
   border
 } from 'styled-system'
 import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 import shouldForwardProp from '@styled-system/should-forward-prop'
 import React from 'react'
+import { opacify } from 'polished'
+import { colors } from '../styles/theme'
 
 export const Base = styled('div', {
   shouldForwardProp
@@ -24,20 +27,23 @@ Section.defaultProps = {
 }
 
 export const Container = styled(Box)()
+
 Container.defaultProps = {
   width: 1,
-  maxWidth: '780px',
+  maxWidth: '800px',
   mx: 'auto',
   px: 4
 }
 
 export const Text = styled(Base)(typography)
+
 Text.defaultProps = {
   as: 'p',
   fontSize: ['body', 'bodyDesktop']
 }
 
 export const Title = styled(Text)()
+
 Title.defaultProps = {
   as: 'h1',
   fontSize: ['title', 'titleDesktop'],
@@ -45,8 +51,28 @@ Title.defaultProps = {
 }
 
 export const SubTitle = styled(Text)()
+
 SubTitle.defaultProps = {
   as: 'h3',
   fontSize: ['subTitle', 'subTitleDesktop'],
   lineHeight: 'heading'
+}
+
+export const Input = styled(Text)({
+  '&::placeholder': {
+    color: opacify(-0.5, colors.white)
+  }
+})
+
+Input.defaultProps = {
+  as: 'input',
+  p: 3,
+  width: 1,
+  color: 'white',
+  backgroundColor: opacify(-0.9, colors.light),
+  border: 0,
+  boxShadow: 'none',
+  borderBottom: '2px solid',
+  borderColor: 'light',
+  borderRadius: 0
 }

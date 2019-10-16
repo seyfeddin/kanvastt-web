@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import Header from '../components/Header'
 import IndexHero from '../views/IndexHero'
 import IndexEvents from '../views/IndexEvents'
+import IndexNewsletter from '../views/IndexNewsletter'
 
 function Index() {
   return (
@@ -10,6 +11,7 @@ function Index() {
       <Header />
       <IndexHero />
       <IndexEvents />
+      <IndexNewsletter />
     </Layout>
   )
 }
