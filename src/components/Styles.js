@@ -8,6 +8,7 @@ import {
 } from 'styled-system'
 import styled from '@emotion/styled'
 import shouldForwardProp from '@styled-system/should-forward-prop'
+import React from 'react'
 
 export const Base = styled('div', {
   shouldForwardProp
@@ -19,6 +20,14 @@ export const Section = styled(Box)()
 Section.defaultProps = {
   as: 'section',
   py: 7
+}
+
+export const Container = styled(Box)()
+Container.defaultProps = {
+  width: 1,
+  maxWidth: '780px',
+  mx: 'auto',
+  px: 4
 }
 
 export const Text = styled(Base)(typography)
