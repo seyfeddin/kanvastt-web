@@ -4,7 +4,8 @@ import {
   color,
   typography,
   flexbox,
-  position
+  position,
+  border
 } from 'styled-system'
 import styled from '@emotion/styled'
 import shouldForwardProp from '@styled-system/should-forward-prop'
@@ -12,7 +13,7 @@ import React from 'react'
 
 export const Base = styled('div', {
   shouldForwardProp
-})(layout, space, color, flexbox, position)
+})(layout, space, color, flexbox, position, border)
 
 export const Box = styled(Base)()
 

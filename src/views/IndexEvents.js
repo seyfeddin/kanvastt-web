@@ -1,12 +1,6 @@
 import React from 'react'
-import {
-  Title,
-  SubTitle,
-  Text,
-  Section,
-  Container,
-  Box
-} from '../components/Styles'
+import { Title, Section, Container, Box } from '../components/Styles'
+import Event from '../components/Event'
 import { useStaticQuery, graphql } from 'gatsby'
 
 function Hero() {
@@ -36,12 +30,11 @@ function Hero() {
       <Container>
         <Title>Planlanan Etkinlikler</Title>
 
-        {allMarkdownRemark.edges.map(event => (
-          <Box key={event.node.id}>
-            <SubTitle mt={5}>{event.node.frontmatter.title}</SubTitle>
-            <Text mt={2}>{event.node.frontmatter.description}</Text>
-          </Box>
-        ))}
+        <Box mt={4}>
+          {allMarkdownRemark.edges.map(event => (
+            <Event key={event.node.id} {...event.node.frontmatter} />
+          ))}
+        </Box>
       </Container>
     </Section>
   )

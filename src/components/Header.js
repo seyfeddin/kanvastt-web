@@ -31,7 +31,7 @@ const Header = () => (
           fontSize={22}
           lineHeight={1.22}
           textAlign={['left', 'right']}
-          display={['block', 'inline-block']}
+          display="block"
           mr={4}
           mt={[3, 0]}
           position={['static', 'absolute']}
