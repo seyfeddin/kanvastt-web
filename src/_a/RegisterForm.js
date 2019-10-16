@@ -1,38 +1,38 @@
-import React from "react";
-import addToMailchimp from "gatsby-plugin-mailchimp";
+import React from 'react'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 export default class RegisterForm extends React.Component {
   state = {
     name: null,
     email: null
-  };
+  }
 
   _handleChange = e => {
     console.log({
       [`${e.target.name}`]: e.target.value
-    });
+    })
     this.setState({
       [`${e.target.name}`]: e.target.value
-    });
-  };
+    })
+  }
 
   _handleSubmit = e => {
-    e.preventDefault();
+    e.preventDefault()
 
     addToMailchimp(this.state.email, this.state)
       .then(({ msg, result }) => {
-        if (result !== "success") {
-          throw msg;
+        if (result !== 'success') {
+          throw msg
         }
-        var mail_msg = document.getElementsByClassName("mail-msg").item(0);
-        mail_msg.innerHTML = msg;
+        var mail_msg = document.getElementsByClassName('mail-msg').item(0)
+        mail_msg.innerHTML = msg
       })
       .catch(err => {
-        console.log("err", err);
-        var mail_msg = document.getElementsByClassName("mail-msg").item(0);
-        mail_msg.innerHTML = err;
-      });
-  };
+        console.log('err', err)
+        var mail_msg = document.getElementsByClassName('mail-msg').item(0)
+        mail_msg.innerHTML = err
+      })
+  }
 
   render() {
     return (
@@ -57,6 +57,6 @@ export default class RegisterForm extends React.Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
