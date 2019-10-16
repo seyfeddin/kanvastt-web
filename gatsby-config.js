@@ -1,5 +1,3 @@
-import theme from './src/styles/theme'
-
 module.exports = {
   siteMetadata: {
     title: 'Kanvas Tasarım Topluluğu',
@@ -17,8 +15,8 @@ module.exports = {
         name: `Kanvas Tasarım Topluluğu`,
         short_name: `KanvasTT`,
         start_url: `/`,
-        background_color: theme.colors.primary,
-        theme_color: theme.colors.primary,
+        background_color: '#085147',
+        theme_color: '#085147',
         display: `standalone`
       }
     },
