@@ -8,7 +8,6 @@ import {
   border
 } from 'styled-system'
 import styled from '@emotion/styled'
-import { css } from '@emotion/core'
 import shouldForwardProp from '@styled-system/should-forward-prop'
 import React from 'react'
 import { opacify } from 'polished'
