@@ -72,6 +72,7 @@ function Hero() {
             href="https://twitter.com/kanvastt"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="KanvasTT twitter profili"
           >
             <svg
               role="img"
@@ -93,6 +94,7 @@ function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             ml={4}
+            aria-label="KanvasTT kommunity profili"
           >
             <svg
               width="23"

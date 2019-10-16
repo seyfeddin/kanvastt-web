@@ -1,3 +1,5 @@
+import theme from './src/styles/theme'
+
 module.exports = {
   siteMetadata: {
     title: 'Kanvas Tasarım Topluluğu',
@@ -9,6 +11,17 @@ module.exports = {
   },
   pathPrefix: '/',
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Kanvas Tasarım Topluluğu`,
+        short_name: `KanvasTT`,
+        start_url: `/`,
+        background_color: theme.colors.primary,
+        theme_color: theme.colors.primary,
+        display: `standalone`
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
     {

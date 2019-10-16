@@ -5844,6 +5844,16 @@ gatsby-plugin-mailchimp@^5.1.2:
     email-validator "^2.0.4"
     jsonp "^0.2.1"
 
+gatsby-plugin-manifest@^2.2.23:
+  version "2.2.23"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.23.tgz#7ee152f3758645ef4ace2c06f446dc4b2f058730"
+  integrity sha512-qlxvKlc6fBRGRKqwv5MYVc/DCx2RoOOs2GZVHUN7tN92Ma3kYw3Roce0iuxX+QCyjPT1lyMaii1Rxrq/2QSMTA==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+    gatsby-core-utils "^1.0.15"
+    semver "^5.7.1"
+    sharp "^0.23.1"
+
 gatsby-plugin-netlify-cms@^4.1.6:
   version "4.1.25"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.1.25.tgz#37fba3212acb529cba249c90758aa7aea78fdde6"

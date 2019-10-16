@@ -40,8 +40,10 @@ function Hero() {
 
         <Box as="form" onSubmit={submitForm} mt={4} position="relative">
           <Input
-            type="text"
+            type="email"
+            name="email"
             placeholder="Eposta adresi"
+            required
             onChange={e => setEmail(e.target.value)}
           />
           <Box
@@ -51,6 +53,7 @@ function Hero() {
             top="10px"
             right="10px"
             type="submit"
+            aria-label="Register Newsletter"
           >
             <svg
               width="40"
