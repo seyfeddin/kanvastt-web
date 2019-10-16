@@ -8,9 +8,6 @@ import {
   Input
 } from '../components/Styles'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-import { css } from '@emotion/core'
-import { opacify } from 'polished'
-import { colors } from '../styles/theme'
 
 function Hero() {
   const [email, setEmail] = useState('')
@@ -32,7 +29,7 @@ function Hero() {
   }
 
   return (
-    <Section>
+    <Section id="newsletter">
       <Container>
         <Title>Sen de bizim gibi heyecanlı mısın?</Title>
         <Text mt={4}>

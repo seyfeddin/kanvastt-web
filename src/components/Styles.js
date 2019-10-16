@@ -41,6 +41,13 @@ Text.defaultProps = {
   fontSize: ['body', 'bodyDesktop']
 }
 
+export const Link = styled(Text)({
+  textDecoration: 'underline'
+})
+
+Link.defaultProps = {
+  as: 'a'
+}
 export const Title = styled(Text)()
 
 Title.defaultProps = {

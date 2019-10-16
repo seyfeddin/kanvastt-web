@@ -26,7 +26,7 @@ function Hero() {
   console.log(allMarkdownRemark)
 
   return (
-    <Section bg="light" color="primary">
+    <Section id="events" bg="light" color="primary">
       <Container>
         <Title>Planlanan Etkinlikler</Title>
 
