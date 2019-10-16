@@ -17,7 +17,7 @@ export const fontSizes = {
   body: '18px',
   bodyDesktop: '20px',
   subTitle: '22px',
-  subTitleDesktop: '26px',
+  subTitleDesktop: '24px',
   title: '36px',
   titleDesktop: '44px'
 }
@@ -27,7 +27,7 @@ export const lineHeights = {
   heading: 1.3
 }
 
-export const space = [0, 4, 8, 16, 32, 64, 128]
+export const space = [0, 4, 8, 16, 32, 40, 64, 128]
 
 export const breakpoints = ['65em']
 

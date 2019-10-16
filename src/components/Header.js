@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Text } from './Styles'
 
 const Header = () => (
-  <Box as="header" pt={6}>
+  <Box as="header" pt={7}>
     <Text
       as="a"
       href="/asd"

@@ -18,7 +18,7 @@ export const Box = styled(Base)()
 export const Section = styled(Box)()
 Section.defaultProps = {
   as: 'section',
-  py: 6
+  py: 7
 }
 
 export const Text = styled(Base)(typography)

@@ -9,13 +9,13 @@ function Hero() {
         başlıyor.
       </Title>
 
-      <SubTitle as="p" mt={4}>
+      <SubTitle as="p" lineHeight="body" mt={5}>
         Kanvas, dijital tasarımı sadece estetik olarak değil bir amaç
         doğrultusunda yapılan hareketler bütünü olarak gören herkesi bir araya
         getirmeyi hedefleyen bir topluluktur.
       </SubTitle>
 
-      <SubTitle color="light" mt={4}>
+      <SubTitle color="light" mt={5}>
         Tasarımcı değil misin?
       </SubTitle>
 
@@ -25,7 +25,7 @@ function Hero() {
         de olacak.
       </Text>
 
-      <SubTitle color="light" mt={4}>
+      <SubTitle color="light" mt={5}>
         Nasıl Katılabilirim?
       </SubTitle>
 
