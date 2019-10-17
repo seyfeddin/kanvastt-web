@@ -33,7 +33,7 @@ function Hero() {
       <Container>
         <Title>Sen de bizim gibi heyecanlı mısın?</Title>
         <Text as="label" display="block" for="email" mt={4}>
-          O halde topluluğun şekillenmesinde söz sahibi olmak, ve tüm
+          O halde topluluğun şekillenmesinde söz sahibi olmak ve tüm
           gelişmelerden ilk haberdar olmak istiyorsan, e-posta listesine kayıt
           ol
         </Text>
