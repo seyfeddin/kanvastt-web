@@ -33,12 +33,18 @@ const Seo = () => {
       <meta name="twitter:site" content={social.twitter} />
       <meta name="twitter:creator" content={social.twitter} />
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:image" content={`./img/og-image.jpg`} />
+      <meta
+        name="twitter:image"
+        content="https://kanvas.istanbul/img/og-image.jpg"
+      />
 
       <meta property="og:type" content="business.business" />
       <meta property="og:title" content={title} />
       <meta property="og:url" content="/" />
-      <meta property="og:image" content={`./img/og-image.jpg`} />
+      <meta
+        property="og:image"
+        content="https://kanvas.istanbul/img/og-image.jpg"
+      />
 
       <link
         rel="preload"
