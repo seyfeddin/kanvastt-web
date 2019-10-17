@@ -22,9 +22,9 @@ function Hero() {
         </Title>
 
         <SubTitle as="p" lineHeight="body" mt={4}>
-          Kanvas, dijital tasarımı sadece estetik olarak değil bir amaç
-          doğrultusunda yapılan hareketler bütünü olarak gören herkesi bir araya
-          getirmeyi hedefleyen bir topluluktur.
+          Kanvas; dijital tasarımı sadece estetik olarak değil, bir amaç
+          doğrultusunda yapılan hareketler bütünü olarak gören herkesi, bir
+          araya getirmeyi hedefleyen bir topluluktur.
         </SubTitle>
 
         <SubTitle color="light" mt={6}>
