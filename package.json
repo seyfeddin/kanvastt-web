@@ -1,7 +1,7 @@
 {
   "name": "kanvastt-gatsby",
   "description": "Kanvas Tasarım Topluluğu Web Sitesi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Adem Ilter, Seyfeddin Başsaraç",
   "dependencies": {
     "@emotion/core": "^10.0.21",

@@ -23,8 +23,6 @@ function Hero() {
     }
   `)
 
-  console.log(allMarkdownRemark)
-
   return (
     <Section id="events" bg="light" color="primary">
       <Container>

@@ -7,7 +7,6 @@ module.exports = {
       twitter: '@KanvasTT'
     }
   },
-  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
@@ -22,6 +21,13 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads'
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
