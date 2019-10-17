@@ -20,7 +20,7 @@ const Seo = () => {
     `
   )
 
-  const { title, description, social } = site.siteMetadata
+  const { title, description, siteUrl, social } = site.siteMetadata
 
   return (
     <Helmet>
@@ -33,18 +33,12 @@ const Seo = () => {
       <meta name="twitter:site" content={social.twitter} />
       <meta name="twitter:creator" content={social.twitter} />
       <meta name="twitter:title" content={title} />
-      <meta
-        name="twitter:image"
-        content="https://kanvas.istanbul/img/og-image.jpg"
-      />
+      <meta name="twitter:image" content={`${siteUrl}/img/og-image.jpg`} />
 
       <meta property="og:type" content="business.business" />
       <meta property="og:title" content={title} />
-      <meta property="og:url" content="/" />
-      <meta
-        property="og:image"
-        content="https://kanvas.istanbul/img/og-image.jpg"
-      />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:image" content={`${siteUrl}/img/og-image.jpg`} />
 
       <link
         rel="preload"
