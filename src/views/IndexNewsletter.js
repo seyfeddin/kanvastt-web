@@ -32,7 +32,7 @@ function Hero() {
     <Section id="newsletter">
       <Container>
         <Title>Sen de bizim gibi heyecanlı mısın?</Title>
-        <Text mt={4}>
+        <Text as="label" display="block" for="email" mt={4}>
           O halde topluluğun şekillenmesinde söz sahibi olmak, ve tüm
           gelişmelerden ilk haberdar olmak istiyorsan, e-posta listesine kayıt
           ol
@@ -40,6 +40,7 @@ function Hero() {
 
         <Box as="form" onSubmit={submitForm} mt={4} position="relative">
           <Input
+            id="email"
             type="email"
             name="email"
             placeholder="Eposta adresi"

@@ -11,7 +11,7 @@ const { NODE_ENV } = process.env
 const Layout = ({ children }) => {
   useEffect(() => {
     if (NODE_ENV === 'production') {
-      ReactGA.initialize('UA-?????????')
+      ReactGA.initialize('UA-150296399-1')
       ReactGA.pageview(window.location.pathname + window.location.search)
     }
   }, [])
