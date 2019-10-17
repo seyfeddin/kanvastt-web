@@ -6,7 +6,7 @@ const Header = () => (
     <Container pt={[6, 7]}>
       <Text
         as="a"
-        href="/asd"
+        href="/"
         color="light"
         position="relative"
         display={['block', 'flex']}
