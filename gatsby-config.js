@@ -69,6 +69,7 @@ module.exports = {
           'https://istanbul.us16.list-manage.com/subscribe/post?u=82e82fcec4c227830ba2687a8&amp;id=76e7fce7a7'
       }
     },
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-netlify',
+    'gatsby-plugin-offline'
   ]
 }
