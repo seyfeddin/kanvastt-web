@@ -1,7 +1,8 @@
 import React from 'react'
-import { Box, Text, SubTitle } from './Styles'
+import { Box, Text, SubTitle, RegisterLink } from './Styles'
 import { opacify } from 'polished'
 import { colors } from '../styles/theme'
+import { Link } from 'gatsby'
 
 const Event = ({ title, tags, link, description, event_date }) => {
   return (
@@ -18,10 +19,21 @@ const Event = ({ title, tags, link, description, event_date }) => {
         right="100%"
         mb={2}
       >
-        YAKINDA
+        {event_date === 'Invalid date' ? 'YAKINDA' : event_date}
       </Text>
       <SubTitle>{title}</SubTitle>
       <Text mt={2}>{description}</Text>
+      {link && (
+        <RegisterLink
+          mt={2}
+          color="primary"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Kayıt ol
+        </RegisterLink>
+      )}
     </Box>
   )
 }

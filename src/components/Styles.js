@@ -63,6 +63,17 @@ SubTitle.defaultProps = {
   lineHeight: 'heading'
 }
 
+export const RegisterLink = styled(Link)()
+
+RegisterLink.defaultProps = {
+  as: 'a',
+  fontSize: ['body', 'bodyDesktop'],
+  lineHeight: 'heading',
+  textDecoration: 'underline',
+  fontWeight: 'bold',
+  display: 'inline-block'
+}
+
 export const Input = styled(Text)({
   '&::placeholder': {
     color: opacify(-0.5, colors.white)
