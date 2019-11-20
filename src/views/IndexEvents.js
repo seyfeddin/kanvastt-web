@@ -18,6 +18,7 @@ function Hero() {
               link
               description
               event_date(locale: "tr")
+              thumbnail
             }
           }
         }

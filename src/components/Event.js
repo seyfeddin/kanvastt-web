@@ -2,11 +2,11 @@ import React from 'react'
 import { Box, Text, SubTitle, RegisterLink } from './Styles'
 import { opacify } from 'polished'
 import { colors } from '../styles/theme'
-import { Link } from 'gatsby'
+import { Link, Img } from 'gatsby'
 import moment from 'moment/locale/tr'
 import Moment from 'react-moment'
 
-const Event = ({ title, tags, link, description, event_date }) => {
+const Event = ({ title, tags, link, description, event_date, thumbnail }) => {
   return (
     <Box
       position="relative"
