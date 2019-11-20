@@ -5,8 +5,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 function Hero() {
   const { allMarkdownRemark } = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___event_date }
+      ) {
         edges {
           node {
             id
