@@ -30,3 +30,9 @@ collections:
         }
       - { label: 'Tags', name: 'tags', widget: 'list', required: false }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
+      - {
+          label: 'Featured Image',
+          name: 'thumbnail',
+          widget: 'image',
+          required: false,
+        }
