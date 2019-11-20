@@ -28,7 +28,7 @@ function Hero() {
   return (
     <Section id="events" bg="light" color="primary">
       <Container>
-        <Title>Planlanan Etkinlikler</Title>
+        <Title>Gelecek Etkinlikler</Title>
 
         <Box mt={4}>
           {allMarkdownRemark.edges.map(event => (
