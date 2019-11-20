@@ -3,6 +3,8 @@ import { Box, Text, SubTitle, RegisterLink } from './Styles'
 import { opacify } from 'polished'
 import { colors } from '../styles/theme'
 import { Link } from 'gatsby'
+import moment from 'moment/locale/tr'
+import Moment from 'react-moment'
 
 const Event = ({ title, tags, link, description, event_date }) => {
   return (
@@ -19,7 +21,13 @@ const Event = ({ title, tags, link, description, event_date }) => {
         right="100%"
         mb={2}
       >
-        {event_date === 'Invalid date' ? 'YAKINDA' : event_date}
+        {!event_date ? (
+          'YAKINDA'
+        ) : (
+          <Moment locale="tr-TR" format="DD MMMM YYYY HH:mm">
+            {event_date}
+          </Moment>
+        )}
       </Text>
       <SubTitle>{title}</SubTitle>
       <Text mt={2}>{description}</Text>

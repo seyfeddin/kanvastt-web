@@ -17,7 +17,7 @@ function Hero() {
               tags
               link
               description
-              event_date(formatString: "DD MMMM YYYY", locale: "tr")
+              event_date(locale: "tr")
             }
           }
         }
