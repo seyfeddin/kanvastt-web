@@ -11,5 +11,6 @@ description: >-
 tags:
   - ''
 link: ''
+thumbnail: /img/twitter-post-workshop-handoff.png
 ---
 
