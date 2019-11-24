@@ -9,5 +9,6 @@ description: >-
 tags:
   - ''
 link: ''
+location: 'Türkiye Tasarım Vakfı, Kuzguncuk'
 ---
 
