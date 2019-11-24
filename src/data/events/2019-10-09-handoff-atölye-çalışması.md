@@ -12,5 +12,6 @@ tags:
   - ''
 link: ''
 thumbnail: /img/twitter-post-workshop-handoff.png
+location: 'Türkiye Tasarım Vakfı, Kuzguncuk'
 ---
 
