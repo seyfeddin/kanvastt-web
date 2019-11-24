@@ -18,7 +18,7 @@ function Hero() {
           <Link color="light" href="#events">
             etkinliklere
           </Link>{' '}
-          başlıyor.
+          başladı.
         </Title>
 
         <SubTitle as="p" lineHeight="body" mt={4}>
