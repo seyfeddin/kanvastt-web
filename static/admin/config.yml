@@ -36,3 +36,9 @@ collections:
           widget: 'image',
           required: false,
         }
+      - {
+          label: 'Location',
+          name: 'location',
+          widget: 'string',
+          required: false,
+        }
