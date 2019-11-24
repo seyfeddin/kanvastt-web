@@ -63,6 +63,15 @@ SubTitle.defaultProps = {
   lineHeight: 'heading'
 }
 
+export const Location = styled(Text)()
+
+Location.defaultProps = {
+  as: 'p',
+  fontSize: ['caption', 'captionDesktop'],
+  lineHeight: 'caption',
+  marginTop: ['8px', '4px']
+}
+
 export const RegisterLink = styled(Link)()
 
 RegisterLink.defaultProps = {
@@ -72,6 +81,16 @@ RegisterLink.defaultProps = {
   textDecoration: 'underline',
   fontWeight: 'bold',
   display: 'inline-block'
+}
+
+export const LocationIcon = styled(Text)()
+
+LocationIcon.defaultProps = {
+  as: 'span',
+  display: 'inline-block',
+  marginRight: '0.3em',
+  verticalAlign: 'middle',
+  marginTop: '-4px'
 }
 
 export const Input = styled(Text)({

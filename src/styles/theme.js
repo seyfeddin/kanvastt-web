@@ -16,6 +16,8 @@ export const fontWeights = {
 export const fontSizes = {
   body: '18px',
   bodyDesktop: '20px',
+  caption: '16px',
+  captionDesktop: '18px',
   subTitle: '22px',
   subTitleDesktop: '24px',
   title: '36px',
@@ -24,7 +26,8 @@ export const fontSizes = {
 
 export const lineHeights = {
   body: 1.5,
-  heading: 1.3
+  heading: 1.3,
+  caption: 1.6
 }
 
 export const space = [0, 4, 8, 16, 32, 40, 64, 128]

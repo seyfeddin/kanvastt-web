@@ -19,6 +19,7 @@ function Hero() {
               description
               event_date(locale: "tr")
               thumbnail
+              location
             }
           }
         }
