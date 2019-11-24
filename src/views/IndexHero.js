@@ -16,9 +16,9 @@ function Hero() {
         <Title color="light">
           Yepyeni bir tasarım topluluğu{' '}
           <Link color="light" href="#events">
-            etkinliklere
-          </Link>{' '}
-          başladı.
+            etkinliklere başladı
+          </Link>
+          .
         </Title>
 
         <SubTitle as="p" lineHeight="body" mt={4}>
