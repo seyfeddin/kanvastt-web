@@ -8,7 +8,8 @@ description: >-
   seyredeceğiz.
 tags:
   - ''
-link: ''
+link: >-
+  https://www.eventbrite.com/e/dieter-rams-belgesel-gosterimi-tickets-83779174767?utm_source=eventbrite&utm_medium=email&utm_content=follow_notification&utm_campaign=following_published_event&utm_term=Dieter+Rams++%7C+Belgesel+Gösterimi&aff=kanvaswebsite
 location: 'Türkiye Tasarım Vakfı, Kuzguncuk'
 ---
 
