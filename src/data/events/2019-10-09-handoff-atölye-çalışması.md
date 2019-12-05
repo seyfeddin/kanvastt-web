@@ -10,7 +10,7 @@ description: >-
   olacak. 
 tags:
   - ''
-link: ''
+link: 'https://www.eventbrite.com/e/handoff-semineri-tickets-84902773481'
 thumbnail: /img/twitter-post-workshop-handoff.png
 location: 'Türkiye Tasarım Vakfı, Kuzguncuk'
 ---
