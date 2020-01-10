@@ -6,7 +6,9 @@ function CodeOfConductDetail() {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { id: { eq: "69ae2a23-afe9-5818-a563-81b520e7cf3c" } }
+        filter: {
+          fileAbsolutePath: { regex: "/kanvas-topluluk-politikası.md/" }
+        }
       ) {
         edges {
           node {

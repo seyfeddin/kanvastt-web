@@ -8,7 +8,7 @@ function Hero() {
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: frontmatter___event_date }
-        filter: { id: { ne: "69ae2a23-afe9-5818-a563-81b520e7cf3c" } }
+        filter: { fileAbsolutePath: { regex: "/data/events/" } }
       ) {
         edges {
           node {
