@@ -42,3 +42,13 @@ collections:
           widget: 'string',
           required: false,
         }
+  - name: 'page'
+    label: 'Page'
+    folder: 'src/data/pages'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Blog post content', name: 'body', widget: 'markdown' }
