@@ -4,7 +4,8 @@ module.exports = {
     description: 'Kanvas Tasarım Topluluğu Web Sitesi',
     siteUrl: 'https://kanvas.istanbul',
     social: {
-      twitter: '@KanvasTT'
+      twitter: '@KanvasTT',
+      instagram: '@kanvas_tt'
     }
   },
   plugins: [
