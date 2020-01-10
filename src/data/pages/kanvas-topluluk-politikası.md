@@ -19,8 +19,7 @@ Kabul edilemez davranışlara aşağıdakiler örnek gösterilebilir:
 
 * Cinsiyetçi dil veya görsellerin kullanımı ve diğer katkıcılara istenmeyen romantik ilgi 
 * göstermek veya romantik tekliflerde bulunmak
-* Trollemek, hakaret/aşağılama içeren yorumlar ve birinin şahsına veya siyasi görüşlerine 
-* saldırmak
+* Trollemek, hakaret/aşağılama içeren yorumlar ve birinin şahsına veya siyasi görüşlerine saldırmak
 * Birini alenen veya gizlice taciz etmek
 * Başka insanların kişisel bilgilerini, mesela ev adreslerini, rızaları olmadan yayınlamak
 * Profesyonel bir ortamda uygunsuz kaçabilecek davranışlarda bulunmak
