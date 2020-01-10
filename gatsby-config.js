@@ -32,8 +32,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/data`,
-        name: 'data'
+        path: `${__dirname}/src/data/events`,
+        name: 'events'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/data/pages`,
+        name: 'pages'
       }
     },
     'gatsby-plugin-sharp',

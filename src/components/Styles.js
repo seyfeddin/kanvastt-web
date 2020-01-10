@@ -40,6 +40,31 @@ Text.defaultProps = {
   fontSize: ['body', 'bodyDesktop']
 }
 
+export const HTMLText = styled(Text)`
+  & * a {
+    text-decoration: underline;
+  }
+  & p {
+    margin-bottom: 20px;
+  }
+  & h2 {
+    margin-bottom: 10px;
+    margin-top: 60px;
+  }
+  & ul > li {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  & ul {
+    margin-bottom: 32px;
+  }
+  line-height: 1.6;
+`
+HTMLText.defaultProps = {
+  as: 'div',
+  fontSize: ['body', 'bodyDesktop']
+}
+
 export const Link = styled(Text)({
   textDecoration: 'underline'
 })
