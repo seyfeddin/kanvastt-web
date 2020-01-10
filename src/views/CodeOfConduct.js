@@ -24,14 +24,17 @@ function CodeOfConductDetail() {
   return (
     <Section id="code-of-conduct" bg="primary" color="white">
       <Container>
-        <Title>{allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
-
-        <HTMLText
-          mt={4}
-          dangerouslySetInnerHTML={{
-            __html: allMarkdownRemark.edges[0].node.html
-          }}
-        ></HTMLText>
+        {allMarkdownRemark.edges.length && (
+          <Title>{allMarkdownRemark.edges[0].node.frontmatter.title}</Title>
+        )}
+        {allMarkdownRemark.edges.length && (
+          <HTMLText
+            mt={4}
+            dangerouslySetInnerHTML={{
+              __html: allMarkdownRemark.edges[0].node.html
+            }}
+          ></HTMLText>
+        )}
       </Container>
     </Section>
   )
