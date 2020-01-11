@@ -72,6 +72,14 @@ export const Link = styled(Text)({
 Link.defaultProps = {
   as: 'a'
 }
+
+export const PlainLink = styled(Link)()
+
+PlainLink.defaultProps = {
+  as: 'a',
+  fontSize: ['caption', 'captionDesktop']
+}
+
 export const Title = styled(Text)()
 
 Title.defaultProps = {

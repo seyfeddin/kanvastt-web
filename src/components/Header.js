@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box, Text } from './Styles'
+import { Container, Box, Text, PlainLink } from './Styles'
 
 const Header = () => (
   <Box as="header">
@@ -10,6 +10,7 @@ const Header = () => (
         color="light"
         position="relative"
         display={['block', 'flex']}
+        flexWrap="wrap"
         alignItems="center"
       >
         <svg
@@ -43,6 +44,18 @@ const Header = () => (
           <br />
           TOPLULUĞU
         </Text>
+        <PlainLink
+          href="/code-of-conduct"
+          textAlign={['left', 'right']}
+          display="block"
+          float="right"
+          mr={0}
+          mt={[3, 0]}
+          position={['static', 'absolute']}
+          right="0"
+        >
+          Topluluk Kuralları
+        </PlainLink>
       </Text>
     </Container>
   </Box>
