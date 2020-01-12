@@ -1,6 +1,5 @@
 import React from 'react'
-import cn from 'classnames'
-import { format, isPast } from 'date-fns'
+import { format } from 'date-fns'
 import { tr } from 'date-fns/locale'
 
 function Event({
@@ -12,12 +11,7 @@ function Event({
   register_url
 }) {
   return (
-    <article
-      className={cn([
-        'event mt-32 pt-32',
-        { 'past-event': datetime && isPast(new Date(datetime)) }
-      ])}
-    >
+    <article className="event mt-32 pt-32">
       {/* title */}
       <h3 className="event-title mt-0">{title}</h3>
 

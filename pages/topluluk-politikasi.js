@@ -8,7 +8,7 @@ function CodeOfConduct() {
         <title>Topluluk Politikası</title>
       </Head>
 
-      <section className="py-64 py-lg-128">
+      <section className="py-128">
         <div className="container">
           <h1>Topluluk Politikası</h1>
 

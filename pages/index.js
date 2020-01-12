@@ -3,8 +3,17 @@ import fetch from 'isomorphic-unfetch'
 import SocialLinks from '../components/social-links'
 import React from 'react'
 import Event from '../components/event'
+import { isPast } from 'date-fns'
 
 function HomePage({ events }) {
+  const featureEvents = events.filter(
+    event => !event.datetime || !isPast(new Date(event.datetime))
+  )
+
+  const pastEvents = events.filter(
+    event => event.datetime && isPast(new Date(event.datetime))
+  )
+
   return (
     <Layout>
       <section className="py-128">
@@ -14,23 +23,23 @@ function HomePage({ events }) {
             <a href="#events">etkinliklere başladı.</a>
           </h1>
 
-          <p className="mt-32">
+          <p className="h3 mt-32">
             Kanvas; dijital tasarımı sadece estetik olarak değil, bir amaç
             doğrultusunda yapılan hareketler bütünü olarak gören herkesi, bir
             araya getirmeyi hedefleyen bir topluluktur.
           </p>
 
-          <h3 className="mt-64 c-light">Tasarımcı değil misin?</h3>
+          <h3>Tasarımcı değil misin?</h3>
 
-          <p className="mt-8">
+          <p>
             Merak duyman yeterli. Hedeflerimizden biri de topluma yeni
             tasarımcılar kazandırmak. Planladığımız etkinlikler arasında sana
             uygun etkinlikler de olacak.
           </p>
 
-          <h3 className="mt-64 c-light">Nasıl Katılabilirim?</h3>
+          <h3>Nasıl Katılabilirim?</h3>
 
-          <p className="mt-8">
+          <p>
             Bizi{' '}
             <a
               className="c-light"
@@ -57,9 +66,9 @@ function HomePage({ events }) {
             kayıt olman gerek.
           </p>
 
-          <h3 className="c-light mt-64">Size nasıl ulaşabilirim?</h3>
+          <h3>Size nasıl ulaşabilirim?</h3>
 
-          <p className="mt-8">
+          <p>
             Tavsiyelerini, aklına gelen soruları veya topluluğumuzun
             düzenlemesini istediğin etkinlik isteklerini{' '}
             <a
@@ -80,7 +89,14 @@ function HomePage({ events }) {
       <section id="events" className="py-128 bg-light c-primary">
         <div className="container">
           <h2 className="h1 my-0">Gelecek Etkinlikler</h2>
-          {events.map(event => (
+
+          {featureEvents.map(event => (
+            <Event key={event.id} {...event} />
+          ))}
+
+          <h2 className="h1 mt-128 mb-0">Geçmiş Etkinlikler</h2>
+
+          {pastEvents.map(event => (
             <Event key={event.id} {...event} />
           ))}
         </div>

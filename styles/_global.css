@@ -28,7 +28,7 @@ main {
 h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-heading);
-  margin-bottom: 64px;
+  margin-bottom: 8px;
 }
 
 .h2,
@@ -42,7 +42,7 @@ h2 {
 .h3,
 h3 {
   font-size: var(--fs-h3);
-  line-height: var(--lh-heading);
+  line-height: var(--lh-body);
   margin-top: 64px;
   margin-bottom: 8px;
 }
