@@ -106,7 +106,7 @@ function HomePage({ events }) {
 }
 
 HomePage.getInitialProps = async () => {
-  const res = await fetch('http://localhost:1337/events')
+  const res = await fetch('https://shrouded-refuge-70841.herokuapp.com/events')
   const events = await res.json()
   return { events }
 }
