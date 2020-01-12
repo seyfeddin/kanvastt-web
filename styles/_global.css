@@ -61,6 +61,11 @@ ul {
   padding-left: 1em;
 }
 
+.flat-list {
+  list-style: none;
+  padding-left: 0;
+}
+
 .c-light {
   color: var(--c-light);
 }

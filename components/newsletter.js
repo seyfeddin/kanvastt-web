@@ -22,8 +22,10 @@ function Icon() {
 function Newsletter() {
   const [email, setEmail] = useState('')
   const [messages, setMessages] = useState('')
+  const url =
+    'https://istanbul.us16.list-manage.com/subscribe/post?u=82e82fcec4c227830ba2687a8&amp;id=76e7fce7a7'
 
-  const submitForm = e => {
+  const submit = e => {
     e.preventDefault()
 
     // addToMailchimp(email, {})
@@ -40,7 +42,7 @@ function Newsletter() {
 
   return (
     <>
-      <form onSubmit={submitForm} className="newsletter mt-32">
+      <form onSubmit={submit} className="newsletter mt-32">
         <input
           className="newsletter-input"
           id="email"

@@ -1,3 +1,4 @@
+import React from 'react'
 import Router from 'next/router'
 import * as gtag from '../lib/gtag'
 import Seo from '../components/seo'

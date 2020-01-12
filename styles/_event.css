@@ -1,0 +1,11 @@
+.event {
+  border-top: 1px solid rgba(8, 81, 71, 0.3);
+
+  &.past-event {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

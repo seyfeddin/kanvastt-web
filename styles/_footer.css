@@ -12,7 +12,7 @@
   position: relative;
 
   &-input {
-    padding: 16px 32px;
+    padding: 16px;
     width: 100%;
     font-weight: bold;
     color: var(--c-primary);

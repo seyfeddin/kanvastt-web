@@ -1,18 +1,17 @@
 import Layout from '../components/layout'
 import fetch from 'isomorphic-unfetch'
-import Link from 'next/link'
 import SocialLinks from '../components/social-links'
+import React from 'react'
+import Event from '../components/event'
 
 function HomePage({ events }) {
   return (
     <Layout>
-      <section className="py-64 py-lg-128">
+      <section className="py-128">
         <div className="container">
           <h1 className="c-light">
             Yepyeni bir tasarım topluluğu{' '}
-            <Link href="#events">
-              <a>etkinliklere başladı.</a>
-            </Link>
+            <a href="#events">etkinliklere başladı.</a>
           </h1>
 
           <p className="mt-32">
@@ -78,12 +77,11 @@ function HomePage({ events }) {
         </div>
       </section>
 
-      <section className="py-64 py-lg-128 bg-light c-primary">
+      <section id="events" className="py-128 bg-light c-primary">
         <div className="container">
+          <h2 className="h1 my-0">Gelecek Etkinlikler</h2>
           {events.map(event => (
-            <h3 key={event.id} className="mt-0">
-              {event.title}
-            </h3>
+            <Event key={event.id} {...event} />
           ))}
         </div>
       </section>
@@ -93,8 +91,8 @@ function HomePage({ events }) {
 
 HomePage.getInitialProps = async () => {
   const res = await fetch('http://localhost:1337/events')
-  const json = await res.json()
-  return { events: json }
+  const events = await res.json()
+  return { events }
 }
 
 export default HomePage

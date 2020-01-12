@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 function Seo() {
-  // https://istanbul.us16.list-manage.com/subscribe/post?u=82e82fcec4c227830ba2687a8&amp;id=76e7fce7a7
   const site = {
     title: 'Kanvas Tasarım Topluluğu',
     description: 'Kanvas Tasarım Topluluğu Web Sitesi',
