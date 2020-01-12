@@ -1,0 +1,19 @@
+:root {
+  --c-primary: #085147;
+  --c-white: #fff;
+  --c-light: #ffebe6;
+
+  //--fs-base: 18px;
+  --fs-body: 18px;
+  --fs-body-desktop: 20px;
+  --fs-caption: 16px;
+  --fs-caption-desktop: 18px;
+  --fs-subTitle: 22px;
+  --fs-subTitle-desktop: 24px;
+  --fs-title: 36px;
+  --fs-title-desktop: 44px;
+
+  --lh-body: 1.5;
+  --lh-heading: 1.3;
+  --lh-caption: 1.6;
+}

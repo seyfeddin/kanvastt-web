@@ -1,0 +1,123 @@
+@each $i in 0, 4, 8, 16, 32, 64, 128 {
+  .m-$(i) {
+    margin: $(i)px !important;
+  }
+  .mt-$(i),
+  .my-$(i) {
+    margin-top: $(i)px !important;
+  }
+  .mr-$(i),
+  .mx-$(i) {
+    margin-right: $(i)px !important;
+  }
+  .mb-$(i),
+  .my-$(i) {
+    margin-bottom: $(i)px !important;
+  }
+  .ml-$(i),
+  .mx-$(i) {
+    margin-left: $(i)px !important;
+  }
+  .m-auto {
+    margin: auto !important;
+  }
+  .mt-auto,
+  .my-auto {
+    margin-top: auto !important;
+  }
+  .mr-auto,
+  .mx-auto {
+    margin-right: auto !important;
+  }
+  .mb-auto,
+  .my-auto {
+    margin-bottom: auto !important;
+  }
+  .ml-auto,
+  .mx-auto {
+    margin-left: auto !important;
+  }
+
+  .p-$(i) {
+    padding: $(i)px !important;
+  }
+  .pt-$(i),
+  .py-$(i) {
+    padding-top: $(i)px !important;
+  }
+  .pr-$(i),
+  .px-$(i) {
+    padding-right: $(i)px !important;
+  }
+  .pb-$(i),
+  .py-$(i) {
+    padding-bottom: $(i)px !important;
+  }
+  .pl-$(i),
+  .px-$(i) {
+    padding-left: $(i)px !important;
+  }
+}
+
+@media (--lg) {
+  @each $i in 0, 4, 8, 16, 32, 64, 128 {
+    .m-lg-$(i) {
+      margin: $(i)px !important;
+    }
+    .mt-lg-$(i),
+    .my-lg-$(i) {
+      margin-top: $(i)px !important;
+    }
+    .mr-lg-$(i),
+    .mx-lg-$(i) {
+      margin-right: $(i)px !important;
+    }
+    .mb-lg-$(i),
+    .my-lg-$(i) {
+      margin-bottom: $(i)px !important;
+    }
+    .ml-lg-$(i),
+    .mx-lg-$(i) {
+      margin-left: $(i)px !important;
+    }
+    .m-lg-auto {
+      margin: auto !important;
+    }
+    .mt-lg-auto,
+    .my-lg-auto {
+      margin-top: auto !important;
+    }
+    .mr-lg-auto,
+    .mx-lg-auto {
+      margin-right: auto !important;
+    }
+    .mb-lg-auto,
+    .my-lg-auto {
+      margin-bottom: auto !important;
+    }
+    .ml-lg-auto,
+    .mx-lg-auto {
+      margin-left: auto !important;
+    }
+
+    .p-lg-$(i) {
+      padding: $(i)px !important;
+    }
+    .pt-lg-$(i),
+    .py-lg-$(i) {
+      padding-top: $(i)px !important;
+    }
+    .pr-lg-$(i),
+    .px-lg-$(i) {
+      padding-right: $(i)px !important;
+    }
+    .pb-lg-$(i),
+    .py-lg-$(i) {
+      padding-bottom: $(i)px !important;
+    }
+    .pl-lg-$(i),
+    .px-lg-$(i) {
+      padding-left: $(i)px !important;
+    }
+  }
+}

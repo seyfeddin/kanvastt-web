@@ -1,53 +1,28 @@
 {
+  "repository": "git@github.com:seyfeddin/kanvastt-web.git",
+  "license": "MIT",
   "name": "kanvastt-gatsby",
   "description": "Kanvas Tasarım Topluluğu Web Sitesi",
   "version": "0.1.1",
   "author": "Adem Ilter, Seyfeddin Başsaraç",
-  "dependencies": {
-    "@emotion/core": "^10.0.21",
-    "@emotion/styled": "^10.0.17",
-    "@styled-system/should-forward-prop": "^5.1.2",
-    "emotion-theming": "^10.0.19",
-    "gatsby": "^2.13.31",
-    "gatsby-image": "^2.0.23",
-    "gatsby-plugin-emotion": "^4.1.12",
-    "gatsby-plugin-mailchimp": "^5.1.2",
-    "gatsby-plugin-manifest": "^2.2.23",
-    "gatsby-plugin-netlify": "^2.0.6",
-    "gatsby-plugin-netlify-cms": "^4.1.6",
-    "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-react-helmet": "^3.0.4",
-    "gatsby-plugin-sharp": "^2.2.9",
-    "gatsby-remark-copy-linked-files": "^2.0.7",
-    "gatsby-remark-images": "^3.1.6",
-    "gatsby-remark-relative-images": "^0.2.1",
-    "gatsby-source-filesystem": "^2.0.26",
-    "gatsby-transformer-remark": "^2.6.9",
-    "gatsby-transformer-sharp": "^2.1.9",
-    "netlify-cms-app": "^2.9.6",
-    "polished": "^3.4.1",
-    "prop-types": "^15.6.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-ga": "^2.7.0",
-    "react-helmet": "^5.2.0",
-    "react-moment": "^0.9.6",
-    "styled-system": "^5.1.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.1.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "prettier": "^1.15.3"
+    "postcss-custom-media": "^7.0.8",
+    "postcss-each": "^0.10.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "prettier": "^1.19.1"
   }
 }

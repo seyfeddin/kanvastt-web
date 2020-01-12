@@ -1,0 +1,16 @@
+@import '_font-face.css';
+@import '_reset.css';
+@import '_variable.css';
+@import '_space.css';
+
+@import '_global.css';
+@import '_header.css';
+
+.intro {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  @media (--lg) {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+}

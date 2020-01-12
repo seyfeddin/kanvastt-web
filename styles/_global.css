@@ -1,0 +1,36 @@
+html {
+  //font-size: var(--fs-base);
+}
+
+body {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: normal;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--c-white);
+  background-color: var(--c-primary);
+  @media (--lg) {
+    font-size: var(--fs-body-desktop);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+h1 {
+  font-size: var(--fs-title);
+  line-height: var(--lh-heading);
+  @media (--lg) {
+    font-size: var(--fs-title-desktop);
+  }
+}
+
+.c-light {
+  color: var(--c-light);
+}

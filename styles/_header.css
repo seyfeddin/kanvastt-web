@@ -1,0 +1,34 @@
+.header {
+  .container {
+    padding-top: 64px;
+    @media (--lg) {
+      display: flex;
+      align-items: center;
+      padding-top: 128px;
+    }
+  }
+
+  .logo {
+    color: var(--c-light);
+    position: relative;
+    display: inline-block;
+    @media (--lg) {
+      display: flex;
+      align-items: center;
+    }
+
+    b {
+      font-size: 22px;
+      line-height: 1.22;
+      display: block;
+      margin-right: 32px;
+      margin-top: 16px;
+      @media (--lg) {
+        text-align: right;
+        margin-top: 0;
+        position: absolute;
+        right: 100%;
+      }
+    }
+  }
+}
