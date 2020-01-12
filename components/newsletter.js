@@ -1,4 +1,8 @@
-import React, { useState } from 'react'
+import React, { createRef } from 'react'
+import MailchimpSubscribe from 'react-mailchimp-subscribe'
+
+const url =
+  'https://istanbul.us16.list-manage.com/subscribe/post?u=82e82fcec4c227830ba2687a8&amp;id=76e7fce7a7'
 
 function Icon() {
   return (
@@ -20,49 +24,56 @@ function Icon() {
 }
 
 function Newsletter() {
-  const [email, setEmail] = useState('')
-  const [messages, setMessages] = useState('')
-  const url =
-    'https://istanbul.us16.list-manage.com/subscribe/post?u=82e82fcec4c227830ba2687a8&amp;id=76e7fce7a7'
-
-  const submit = e => {
-    e.preventDefault()
-
-    // addToMailchimp(email, {})
-    //   .then(({ msg, result }) => {
-    //     if (result !== 'success') {
-    //       throw msg
-    //     }
-    //     setMessages(msg)
-    //   })
-    //   .catch(err => {
-    //     setMessages(err)
-    //   })
-  }
+  const emailRef = createRef()
 
   return (
-    <>
-      <form onSubmit={submit} className="newsletter mt-32">
-        <input
-          className="newsletter-input"
-          id="email"
-          type="email"
-          name="email"
-          placeholder="Eposta adresi"
-          required
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-        />
-        <button
-          className="newsletter-button"
-          type="submit"
-          aria-label="Register Newsletter"
-        >
-          <Icon />
-        </button>
-        {messages && <p className="mt-32">{messages}</p>}
-      </form>
-    </>
+    <MailchimpSubscribe
+      url={url}
+      render={({ subscribe, status, message }) => {
+        return (
+          <>
+            <form
+              className="newsletter mt-32"
+              onSubmit={e => {
+                e.preventDefault()
+                subscribe({
+                  EMAIL: emailRef.current.value
+                })
+              }}
+            >
+              <input
+                ref={emailRef}
+                className="newsletter-input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Eposta adresi"
+                required
+              />
+              <button
+                className="newsletter-button"
+                type="submit"
+                aria-label="Register Newsletter"
+              >
+                <Icon />
+              </button>
+            </form>
+            <p className="mt-16">
+              {status === 'sending' && <span>Kayıt ediliyor...</span>}
+              {status === 'error' && (
+                <span dangerouslySetInnerHTML={{ __html: message }} />
+              )}
+              {status === 'success' && (
+                <span>
+                  Ön kaydı yaptık. E-posta kutunuza gelen mesajı onaylayarak
+                  süreci tamamlayın.
+                </span>
+              )}
+            </p>
+          </>
+        )
+      }}
+    />
   )
 }
 
