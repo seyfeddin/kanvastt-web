@@ -6,7 +6,7 @@ import SocialLinks from '../components/social-links'
 function HomePage({ events }) {
   return (
     <Layout>
-      <section className="intro">
+      <section className="py-64 py-lg-128">
         <div className="container">
           <h1 className="c-light">
             Yepyeni bir tasarım topluluğu{' '}
@@ -78,7 +78,7 @@ function HomePage({ events }) {
         </div>
       </section>
 
-      <section>
+      <section className="py-64 py-lg-128 bg-light c-primary">
         <div className="container">
           {events.map(event => (
             <h3 key={event.id} className="title">

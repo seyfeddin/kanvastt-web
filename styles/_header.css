@@ -1,10 +1,8 @@
 .header {
   .container {
-    padding-top: 64px;
     @media (--lg) {
       display: flex;
       align-items: center;
-      padding-top: 128px;
     }
   }
 
@@ -12,6 +10,7 @@
     color: var(--c-light);
     position: relative;
     display: inline-block;
+    text-decoration: none;
     @media (--lg) {
       display: flex;
       align-items: center;

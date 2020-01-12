@@ -78,28 +78,3 @@ menu,
 td {
   padding: 0;
 }
-
-button,
-fieldset,
-iframe {
-  border: 0;
-}
-
-fieldset {
-  min-width: 0;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-th {
-  text-align: left;
-}

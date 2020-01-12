@@ -1,7 +1,3 @@
-html {
-  //font-size: var(--fs-base);
-}
-
 body {
   font-family: 'Manrope', system-ui, sans-serif;
   font-weight: normal;
@@ -9,9 +5,13 @@ body {
   line-height: var(--lh-body);
   color: var(--c-white);
   background-color: var(--c-primary);
-  @media (--lg) {
-    font-size: var(--fs-body-desktop);
-  }
+  padding-bottom: var(--footer-height);
+}
+
+main {
+  z-index: 2;
+  position: relative;
+  background-color: var(--c-primary);
 }
 
 .container {
@@ -23,14 +23,63 @@ body {
   padding-right: 32px;
 }
 
+.h1,
 h1 {
-  font-size: var(--fs-title);
+  font-size: var(--fs-h1);
   line-height: var(--lh-heading);
-  @media (--lg) {
-    font-size: var(--fs-title-desktop);
+  margin-bottom: 64px;
+}
+
+.h2,
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+  margin-top: 64px;
+  margin-bottom: 8px;
+}
+
+.h3,
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-heading);
+  margin-top: 64px;
+  margin-bottom: 8px;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
+}
+
+ul {
+  padding-left: 1em;
 }
 
 .c-light {
   color: var(--c-light);
+}
+
+.c-primary {
+  color: var(--c-primary);
+}
+
+.c-white {
+  color: var(--c-white);
+}
+
+.bg-light {
+  background-color: var(--c-light);
+}
+
+.bg-primary {
+  background-color: var(--c-primary);
+}
+
+.bg-white {
+  background-color: var(--c-white);
 }
