@@ -81,7 +81,7 @@ function HomePage({ events }) {
       <section className="py-64 py-lg-128 bg-light c-primary">
         <div className="container">
           {events.map(event => (
-            <h3 key={event.id} className="title">
+            <h3 key={event.id} className="mt-0">
               {event.title}
             </h3>
           ))}
