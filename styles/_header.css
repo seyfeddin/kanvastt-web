@@ -1,4 +1,8 @@
 .header {
+  z-index: 2;
+  position: relative;
+  background-color: var(--c-primary);
+
   .container {
     @media (--lg) {
       display: flex;

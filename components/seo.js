@@ -12,7 +12,10 @@ function Seo() {
   return (
     <Head>
       <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
 
       <title>{site.title}</title>
       <meta name="description" content={site.description} />
@@ -28,7 +31,7 @@ function Seo() {
       <meta property="og:url" content={site.url} />
       <meta property="og:image" content={`${site.url}/og-image.jpg`} />
 
-      <meta name="theme-color" content="#fff" />
+      <meta name="theme-color" content="#085147" />
 
       <link
         rel="preload"
