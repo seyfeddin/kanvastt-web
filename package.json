@@ -3,7 +3,7 @@
   "license": "MIT",
   "name": "kanvastt-gatsby",
   "description": "Kanvas Tasarım Topluluğu Web Sitesi",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "author": "Adem Ilter, Seyfeddin Başsaraç",
   "scripts": {
     "dev": "next",
