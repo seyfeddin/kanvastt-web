@@ -19,38 +19,38 @@ function Event({
       <p className="event-description mb-0">{description}</p>
 
       {/* meta */}
-      <ul className="event-meta mt-16 flat-list">
-        {/* datetime */}
-        {datetime ? (
+      {datetime ? (
+        <ul className="event-meta mt-16 flat-list">
+          {/* datetime */}
           <li>
             🕣{' '}
             {format(new Date(datetime), 'dd MMMM yyyy HH:mm', {
               locale: tr
             })}
           </li>
-        ) : (
-          '🕣 Yakında'
-        )}
 
-        {/* location */}
-        {location_name && (
-          <li className="mt-8">
-            📍{' '}
-            {location_url ? (
-              <a href={location_url}>{location_name}</a>
-            ) : (
-              location_name
-            )}
-          </li>
-        )}
+          {/* location */}
+          {location_name && (
+            <li className="mt-8">
+              📍{' '}
+              {location_url ? (
+                <a href={location_url}>{location_name}</a>
+              ) : (
+                location_name
+              )}
+            </li>
+          )}
 
-        {/* register */}
-        {register_url && (
-          <li className="mt-8">
-            🎫 {register_url && <a href={register_url}>Kayıt ol</a>}
-          </li>
-        )}
-      </ul>
+          {/* register */}
+          {register_url && (
+            <li className="mt-8">
+              🎫 {register_url && <a href={register_url}>Kayıt ol</a>}
+            </li>
+          )}
+        </ul>
+      ) : (
+        <p className="mt-16">🕣 Yakında</p>
+      )}
     </article>
   )
 }
