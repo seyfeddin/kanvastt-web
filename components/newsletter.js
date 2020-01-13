@@ -41,15 +41,17 @@ function Newsletter() {
                 })
               }}
             >
-              <input
-                ref={emailRef}
-                className="newsletter-input"
-                id="email"
-                type="email"
-                name="email"
-                placeholder="Eposta adresi"
-                required
-              />
+              <label>
+                <input
+                  ref={emailRef}
+                  className="newsletter-input"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Eposta adresi"
+                  required
+                />
+              </label>
               <button
                 className="newsletter-button"
                 type="submit"

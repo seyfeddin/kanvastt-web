@@ -2,16 +2,12 @@
   --c-primary: #085147;
   --c-white: #fff;
   --c-light: #ffebe6;
-
-  //--fs-base: 18px;
   --fs-body: 18px;
   --fs-h1: 36px;
   --fs-h2: 28px;
   --fs-h3: 22px;
-
   --lh-body: 1.5;
   --lh-heading: 1.3;
-
   --footer-height: 500px;
 }
 

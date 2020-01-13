@@ -24,6 +24,10 @@ main {
   padding-right: 32px;
 }
 
+label {
+  display: block;
+}
+
 .h1,
 h1 {
   font-size: var(--fs-h1);

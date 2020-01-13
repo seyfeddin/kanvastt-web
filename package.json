@@ -7,20 +7,24 @@
   "author": "Adem Ilter, Seyfeddin Başsaraç",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export"
+    "build": "cross-env NEXT_EXPORT=true next build",
+    "export": "cross-env NEXT_EXPORT=true next export",
+    "start": "yarn run build && yarn run export && serve out"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "date-fns": "^2.9.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.1.7",
+    "next-offline": "^4.0.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-mailchimp-subscribe": "^2.1.0"
+    "react-mailchimp-subscribe": "^2.1.0",
+    "serve": "^11.3.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cross-env": "^6.0.3",
     "postcss-custom-media": "^7.0.8",
     "postcss-each": "^0.10.0",
     "postcss-import": "^12.0.1",

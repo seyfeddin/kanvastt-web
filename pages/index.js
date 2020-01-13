@@ -90,15 +90,19 @@ function HomePage({ events }) {
         <div className="container">
           <h2 className="h1 my-0">Gelecek Etkinlikler</h2>
 
-          {featureEvents.map(event => (
-            <Event key={event.id} {...event} />
-          ))}
+          {featureEvents.length ? (
+            featureEvents.map(event => <Event key={event.id} {...event} />)
+          ) : (
+            <p>Etkinlik bulunamadı</p>
+          )}
 
           <h2 className="h1 mt-128 mb-0">Geçmiş Etkinlikler</h2>
 
-          {pastEvents.map(event => (
-            <Event key={event.id} {...event} />
-          ))}
+          {pastEvents.length ? (
+            pastEvents.map(event => <Event key={event.id} {...event} />)
+          ) : (
+            <p>Etkinlik bulunamadı</p>
+          )}
         </div>
       </section>
     </Layout>
