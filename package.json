@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "next",
     "build": "cross-env NEXT_EXPORT=true next build",
-    "export": "cross-env NEXT_EXPORT=true next export",
-    "start": "yarn run build && yarn run export && serve out"
+    "export": "yarn run build && cross-env NEXT_EXPORT=true next export",
+    "start": "yarn run export && serve out"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
