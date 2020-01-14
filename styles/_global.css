@@ -1,0 +1,95 @@
+body {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-weight: normal;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--c-white);
+  background-color: var(--c-primary);
+  padding-bottom: var(--footer-height);
+}
+
+main {
+  z-index: 2;
+  position: relative;
+  background-color: var(--c-primary);
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+label {
+  display: block;
+}
+
+.h1,
+h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-heading);
+  margin-bottom: 8px;
+}
+
+.h2,
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+  margin-top: 64px;
+  margin-bottom: 8px;
+}
+
+.h3,
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-body);
+  margin-top: 64px;
+  margin-bottom: 8px;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  padding-left: 1em;
+}
+
+.flat-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.c-light {
+  color: var(--c-light);
+}
+
+.c-primary {
+  color: var(--c-primary);
+}
+
+.c-white {
+  color: var(--c-white);
+}
+
+.bg-light {
+  background-color: var(--c-light);
+}
+
+.bg-primary {
+  background-color: var(--c-primary);
+}
+
+.bg-white {
+  background-color: var(--c-white);
+}

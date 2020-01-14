@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--footer-height);
+}
+
+.newsletter {
+  position: relative;
+
+  &-input {
+    padding: 16px;
+    width: 100%;
+    font-weight: bold;
+    color: var(--c-primary);
+    background-color: rgba(8, 81, 71, 0.1);
+    border: 0;
+    box-shadow: none;
+    border-bottom: 2px solid;
+    border-radius: 0;
+
+    &::placeholder {
+      font-weight: normal;
+      color: rgba(8, 81, 71, 0.6);
+    }
+  }
+
+  &-button {
+    border: 0;
+    color: var(--c-primary);
+    position: absolute;
+    right: 16px;
+    top: 10px;
+  }
+}

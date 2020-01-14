@@ -1,0 +1,37 @@
+.header {
+  z-index: 2;
+  position: relative;
+  background-color: var(--c-primary);
+
+  .container {
+    @media (--desktop) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .logo {
+    color: var(--c-light);
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    @media (--desktop) {
+      display: flex;
+      align-items: center;
+    }
+
+    b {
+      font-size: 22px;
+      line-height: 1.22;
+      display: block;
+      margin-right: 32px;
+      margin-top: 16px;
+      @media (--desktop) {
+        text-align: right;
+        margin-top: 0;
+        position: absolute;
+        right: 100%;
+      }
+    }
+  }
+}
