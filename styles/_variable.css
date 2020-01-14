@@ -11,7 +11,7 @@
   --footer-height: 500px;
 }
 
-@media (--lg) {
+@media (--desktop) {
   :root {
     --fs-body: 20px;
     --fs-h1: 44px;

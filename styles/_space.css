@@ -59,7 +59,7 @@
   }
 }
 
-@media (--lg) {
+@media (--desktop) {
   @each $i in 0, 4, 8, 16, 32, 64, 128 {
     .m-lg-$(i) {
       margin: $(i)px !important;
