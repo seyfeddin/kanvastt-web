@@ -3,6 +3,7 @@ import SocialLinks from '../components/social-links'
 import React from 'react'
 import Event from '../components/event'
 import { isPast } from 'date-fns'
+import fetch from 'isomorphic-unfetch'
 
 function HomePage({ events }) {
   const featureEvents = events.filter(
@@ -109,7 +110,7 @@ function HomePage({ events }) {
 }
 
 HomePage.getInitialProps = async () => {
-  const res = await fetch('https://kanvastt-cms.herokuapp.com/events')
+  const res = await fetch(`${process.env.API_URL}/events`)
   const events = await res.json()
   return { events }
 }

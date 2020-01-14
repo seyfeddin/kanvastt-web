@@ -2,6 +2,11 @@ const withCSS = require('@zeit/next-css')
 const withOffline = require('next-offline')
 
 const config = {
+  env: {
+    API_URL: process.env.NEXT_EXPORT
+      ? 'https://kanvastt-cms.herokuapp.com'
+      : 'http://localhost:1337'
+  },
   workboxOpts: {
     swDest: process.env.NEXT_EXPORT
       ? 'service-worker.js'
