@@ -5,7 +5,7 @@ import { tr } from 'date-fns/locale'
 function MetaPast({ photos_url }) {
   return (
     photos_url && (
-      <div className="event-meta mt-16">
+      <div className="mt-32">
         🖼{' '}
         <a href={photos_url} target="_blank" rel="noopener noreferrer">
           Etkinlik fotoğrafları
@@ -17,7 +17,7 @@ function MetaPast({ photos_url }) {
 
 function MetaFeature({ datetime, location_name, location_url, register_url }) {
   return (
-    <ul className="event-meta mt-16 flat-list">
+    <ul className="mt-32 flat-list">
       {/* datetime */}
       <li>
         🕣{' '}
@@ -28,7 +28,7 @@ function MetaFeature({ datetime, location_name, location_url, register_url }) {
 
       {/* location */}
       {location_name && (
-        <li className="mt-8">
+        <li className="mt-4">
           📍{' '}
           {location_url ? (
             <a href={location_url} target="_blank" rel="noopener noreferrer">
@@ -42,7 +42,7 @@ function MetaFeature({ datetime, location_name, location_url, register_url }) {
 
       {/* register */}
       {register_url && (
-        <li className="mt-8">
+        <li className="mt-4">
           🎫{' '}
           {register_url && (
             <a href={register_url} target="_blank" rel="noopener noreferrer">
