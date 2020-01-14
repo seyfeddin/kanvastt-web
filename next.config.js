@@ -29,7 +29,7 @@ const config = {
       ]
     }
   },
-  exportPathMap: async function() {
+  exportPathMap() {
     return {
       '/': { page: '/' },
       '/topluluk-politikasi': { page: '/topluluk-politikasi' }

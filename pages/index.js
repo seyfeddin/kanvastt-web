@@ -1,5 +1,4 @@
 import Layout from '../components/layout'
-import fetch from 'isomorphic-unfetch'
 import SocialLinks from '../components/social-links'
 import React from 'react'
 import Event from '../components/event'
@@ -110,7 +109,7 @@ function HomePage({ events }) {
 }
 
 HomePage.getInitialProps = async () => {
-  const res = await fetch('https://shrouded-refuge-70841.herokuapp.com/events')
+  const res = await fetch('https://kanvastt-cms.herokuapp.com/events')
   const events = await res.json()
   return { events }
 }
