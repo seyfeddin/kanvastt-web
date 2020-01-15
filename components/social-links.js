@@ -82,6 +82,26 @@ function SocialLinks() {
           />
         </svg>
       </a>
+      <a
+        className="c-light ml-32"
+        href="https://t.co/kanvastt"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="KanvasTT Telegram duyuru kanalı"
+      >
+        <svg
+          width="28"
+          height="32"
+          viewBox="0 0 28 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M27.9188 6.1625L23.6938 26.0875C23.375 27.4937 22.5438 27.8437 21.3625 27.1812L14.925 22.4375L11.8188 25.425C11.475 25.7687 11.1875 26.0562 10.525 26.0562L10.9875 19.5L22.9188 8.71875C23.4375 8.25625 22.8063 8 22.1125 8.4625L7.3625 17.75L1.0125 15.7625C-0.368748 15.3312 -0.393749 14.3812 1.3 13.7187L26.1375 4.15C27.2875 3.71875 28.2938 4.40625 27.9188 6.1625V6.1625Z"
+            fill="#FFEBE6"
+          />
+        </svg>
+      </a>
     </div>
   )
 }
