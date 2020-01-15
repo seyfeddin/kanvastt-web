@@ -84,7 +84,7 @@ function SocialLinks() {
       </a>
       <a
         className="c-light ml-32"
-        href="https://t.co/kanvastt"
+        href="https://t.me/kanvastt"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="KanvasTT Telegram duyuru kanalı"
