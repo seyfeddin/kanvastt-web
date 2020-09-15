@@ -23,7 +23,7 @@ function SocialLinks() {
         </svg>
       </a>
       <a
-        className="c-light ml-32"
+        className="c-light ml-16 ml-lg-32"
         href="https://kommunity.com/kanvas-tasarim-toplulugu"
         target="_blank"
         rel="noopener noreferrer"
@@ -43,7 +43,7 @@ function SocialLinks() {
         </svg>
       </a>
       <a
-        className="c-light ml-32"
+        className="c-light ml-16 ml-lg-32"
         href="https://instagram.com/kanvas_tt"
         target="_blank"
         rel="noopener noreferrer"
@@ -63,7 +63,7 @@ function SocialLinks() {
         </svg>
       </a>
       <a
-        className="c-light ml-32"
+        className="c-light ml-16 ml-lg-32"
         href="mailto:merhaba@kanvas.istanbul"
         target="_blank"
         rel="noopener noreferrer"
@@ -83,7 +83,7 @@ function SocialLinks() {
         </svg>
       </a>
       <a
-        className="c-light ml-32"
+        className="c-light ml-16 ml-lg-32"
         href="https://t.me/kanvastt"
         target="_blank"
         rel="noopener noreferrer"
@@ -103,7 +103,7 @@ function SocialLinks() {
         </svg>
       </a>
       <a
-        className="c-light ml-32"
+        className="c-light ml-16 ml-lg-32"
         href="https://www.youtube.com/channel/UCnYHPOiDxbYguqfBAKuWa0w/featured"
         target="_blank"
         rel="noopener noreferrer"
