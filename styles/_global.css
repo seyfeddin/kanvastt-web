@@ -1,23 +1,23 @@
 body {
-  font-family: 'Manrope', system-ui, sans-serif;
+  font-family: 'Garnett', system-ui, sans-serif;
   font-weight: normal;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   color: var(--c-white);
-  background-color: var(--c-primary);
+  background-color: var(--footer-background);
   padding-bottom: var(--footer-height);
 }
 
 main {
   z-index: 2;
   position: relative;
-  background-color: var(--c-primary);
+  background-color: var(--hero-background);
   box-shadow: 0 30px 20px rgba(0, 0, 0, 0.1);
 }
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 32px;
@@ -33,6 +33,7 @@ h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-heading);
   margin-bottom: 8px;
+  font-style: normal;
 }
 
 .h2,
@@ -92,4 +93,14 @@ ul {
 
 .bg-white {
   background-color: var(--c-white);
+}
+
+.text-hero-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  font-feature-settings: 'salt' on;
+  font-style: normal;
 }

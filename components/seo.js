@@ -36,14 +36,14 @@ function Seo() {
 
       <link
         rel="preload"
-        href="/static/fonts/manrope-bold.woff2"
+        href="/static/fonts/garnett_regular-webfont.woff2"
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"
       />
       <link
         rel="preload"
-        href="/static/fonts/manrope-medium.woff2"
+        href="/static/fonts/garnett_medium-webfont.woff2"
         as="font"
         type="font/woff2"
         crossOrigin="anonymous"

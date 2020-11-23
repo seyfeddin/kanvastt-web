@@ -9,6 +9,22 @@
   --lh-body: 1.5;
   --lh-heading: 1.3;
   --footer-height: 500px;
+  --font-family: 'Garnett', system-ui, sans-serif;
+
+  --bush: #0f3819;
+  --plantation: #284c4a;
+  --tax-break: #486a61;
+  --summer-green: #90af9b;
+  --rob-roy: #f3cd72;
+  --jaffa: #df824e;
+  --orange-roughy: #ac503c;
+  --palatinate-blue: #0b45d8;
+  --loulou: #4b164a;
+  --smoke-tree: #bd643e;
+  --provincial-pink: #fff7f2;
+  
+  --hero-background: var(--bush);
+  --footer-background: var(--provincial-pink);
 }
 
 @media (--desktop) {

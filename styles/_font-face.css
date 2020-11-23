@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Manrope';
-  src: url('/static/fonts/manrope-medium.woff2') format('woff2'),
-    url('/static/fonts/manrope-medium.woff') format('woff');
+  font-family: 'Garnett';
+  src: url('/fonts/garnett_regular-webfont.woff2') format('woff2'),
+    url('/fonts/garnett_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Manrope';
-  src: url('/static/fonts/manrope-bold.woff2') format('woff2'),
-    url('/static/fonts/manrope-bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Garnett';
+  src: url('/fonts/garnett_medium-webfont.woff2') format('woff2'),
+    url('/fonts/garnett_medium-webfont.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
